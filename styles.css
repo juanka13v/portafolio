@@ -236,6 +236,15 @@ body {
 
 }
 
+/* ---------- Skills ---------- */
+
+.skills-container {
+  border: 1px solid red;
+  width: 100%;
+  max-width: 1100px;
+
+}
+
 /* ---------- Form ---------- */
 
 .contact-container {
@@ -379,6 +388,43 @@ button:hover {
   border: 1px solid #97d848;
 }
 
+/* ---------- Footer ---------- */
+
+.footer-container {
+  border: 1px solid red;
+  width: 100%;
+  height: 200px;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_social-links {
+  margin-right: 3rem;
+  font-size: 1.7rem;
+}
+
+.footer_social-links i:hover {
+  color: rgb(221, 20, 20);
+}
+
+
+.footer-container h4 {
+  margin-left: 3rem;
+  font-size: 1.4;
+}
+
+.footer_links {
+  width: 100px;
+}
+
+.footer_links li:hover{
+  font-weight: 600;
+}
+
+
 
 @media screen and (max-width: 780px) {
   body {
@@ -467,6 +513,41 @@ button:hover {
    .info-text {
      width: 100%;
    }
+
+   /* ---------- Form ---------- */
+
+   .contact_form {
+     flex-direction: column;
+     margin-bottom: 3rem;
+   }
+
+   .formulario {
+     width: 100%;
+     padding: 0;
+   }
+
+   .formulario-img {
+     width: 100%;
+     margin: 3rem 0;
+   }
+
+   .formulario-img img {
+     width: 300px;
+     height: 150px;
+   }
+
+
+   /* ---------- Footer ---------- */
+
+   .footer-container h4 {
+     margin-left: 1rem;
+     padding: 0 1rem;
+   }
+
+   .footer_social-links {
+     margin-right: 1rem;
+   }
+
 }
 
 @media screen and (max-width: 450px) {
@@ -506,4 +587,31 @@ button:hover {
   .info-text p {
     padding: 0 2rem;
   }
+
+  /* ---------- Form ---------- */
+
+  input {
+    width: 250px;
+  }
+
+  textarea {
+    width: 250px;
+  }
+  
+
+  /* ---------- Footer ---------- */
+
+  .footer-container {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .footer-container h4 {
+    order: 3;
+  }
+
+  .footer_links {
+    order: 2;
+  }
+
 }
