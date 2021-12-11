@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Portafolio</title>
+  </head>
+  <body>
+    <header class="header-container">
+      <div class="nav-logo">
+        <div class="logo">
+          <h2><a href="#">Portafolio</a></h2>
+        </div>
+        <div class="menu-icon">
+          <i class="fas fa-bars"></i>
+          <!-- <i class="fas fa-times"></i> -->
+        </div>
+      </div>
+
+      <nav class="nav-links">
+        <ul class="links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#rojects">Proyects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <div class="main-img">
+        <img src="./img/Mi-foto.png" alt="mi foto" />
+        <h3>Desarollador Web</h3>
+        <h3>Juan C. Valero</h3>
+      </div>
+      <div class="main-info">
+        <h2>Hola, bienvenido a mi Portafolio</h2>
+        <p>
+          Mi nombre es Juan y estoy en busqueda de primer trabajo como
+          desarollador web. Tengo conocimientos en html, css, scss, js, react,
+          node, express, mongodb, git, y github
+        </p>
+        <p>
+          Todo lo que he aprendido fue a base de cursos online y de forma
+          autodidacta
+        </p>
+      </div>
+    </main>
+
+    <section class="about-container">
+      <span class="title-separation">
+        About
+        <span class="separation"></span>
+      </span>
+
+      <div class="about-info">
+        <div class="info-text">
+          <h3>Hola, Mi nombre es Juan</h3>
+          <p>Estoy en busca de mi primer trabajo como desarollador web.</p>
+          <p>
+            Soy de jujuy Argentina, todo lo que he aprendido fue de modo
+            autodidacta y cursos online, lo que habla de mis conocimientos son
+            mis proyectos.
+          </p>
+          <p>
+            He comenzado a estudiar desarroyo web a principios de 2021, al no
+            poder encontrar trabajo mas que solo temporales, todo este tiempo he
+            dedica a estudiar de manera autodidacta,
+          </p>
+        </div>
+        <div class="info-img">
+          <img src="/img/Mi-foto.png" alt="foto" />
+          <h3>lorem ipsun</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+            similique velit, doloremque saepe et ipsa repellat perferendis quae
+            repudiandae, veritatis distinctio ipsam, neque rerum labore. Eos
+            nobis ratione voluptas amet?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section style="border: 1px solid black;  max-width: 1100px; margin: 0 auto;" class="projects-container">
+      <span class="title-separation">
+        Projects
+        <span class="separation"></span>
+      </span>
+
+      <div style="height: 1000px" class="projects-main"></div>
+    </section>
+
+    <section style="border: 1px solid black;" class="contact-container">
+      <span class="title-separation">
+        Contact
+        <span class="separation"></span>
+      </span>
+
+      <div class="contact_form">
+        <div class="formulario">
+          <h1>Enviame un mensaje</h1>
+          <form >
+            <p>
+              <label for="nombre" class="colocar_nombre"
+                >Nombre
+                <span class="obligatorio">*</span>
+              </label>
+              <input
+                type="text"
+                name="introducir_nombre"
+                id="nombre"
+                required="obligatorio"
+                placeholder="Escribe tu nombre"
+              />
+            </p>
+
+            <p>
+              <label for="email" class="colocar_email"
+                >Email
+                <span class="obligatorio">*</span>
+              </label>
+              <input
+                type="email"
+                name="introducir_email"
+                id="email"
+                required="obligatorio"
+                placeholder="Escribe tu Email"
+              />
+            </p>
+
+            <p>
+              <label for="asunto" class="colocar_asunto"
+                >Asunto
+                <span class="obligatorio">*</span>
+              </label>
+              <input
+                type="text"
+                name="introducir_asunto"
+                id="assunto"
+                required="obligatorio"
+                placeholder="Escribe un asunto"
+              />
+            </p>
+
+            <p>
+              <label for="mensaje" class="colocar_mensaje"
+                >Mensaje
+                <span class="obligatorio">*</span>
+              </label>
+              <textarea
+                name="introducir_mensaje"
+                class="texto_mensaje"
+                id="mensaje"
+                required="obligatorio"
+                placeholder="Deja aquí tu comentario..."
+              ></textarea>
+            </p>
+
+            <button type="submit" name="enviar_formulario" id="enviar">
+              <p>Enviar</p>
+            </button>
+
+            <p class="aviso">
+              <span class="obligatorio"> * </span>los campos son obligatorios.
+            </p>
+          </form>
+        </div>
+
+        <div class="formulario-img">
+          <div class="img">
+            <img src="/img/javascript_illustration.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div style="height: 2000px"></div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
